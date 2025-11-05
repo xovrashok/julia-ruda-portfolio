@@ -1,0 +1,18 @@
+.section-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--color-main-dark);
+  margin-bottom: 25px;
+  position: relative;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: var(--color-main-normal);
+    margin: 12px auto 0;
+    border-radius: 2px;
+  }
+}

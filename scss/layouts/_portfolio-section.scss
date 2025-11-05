@@ -1,0 +1,12 @@
+.portfolio {
+  background-color: var(--color-main-light);
+  padding: 100px 20px;
+  text-align: center;
+
+  &__card__title {
+    padding: 15px;
+    font-size: 18px;
+    color: var(--color-primary-dark);
+    font-weight: 500;
+  }
+}

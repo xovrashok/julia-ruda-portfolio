@@ -1,0 +1,55 @@
+.contacts {
+  background: linear-gradient(
+    120deg,
+    var(--color-main-dark),
+    var(--color-main-normal)
+  );
+  color: var(--color-primary-light);
+  text-align: center;
+  padding: 100px 20px;
+  border-top: 3px solid var(--color-main-light);
+
+  &__title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  &__text {
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-primary-light);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+
+  &__link:hover {
+    background-color: var(--color-primary-light);
+    color: var(--color-main-dark);
+    transform: translateY(-3px);
+  }
+}

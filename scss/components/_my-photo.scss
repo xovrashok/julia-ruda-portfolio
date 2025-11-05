@@ -1,0 +1,19 @@
+.my__photo {
+  flex: 0 0 340px;
+  max-width: 340px;
+  object-fit: cover;
+  border-radius: 400px 400px 0px 0px;
+  box-shadow: -8px 8px 0 0 var(--color-primary-light),
+    -8px 8px 0 2px var(--color-main-normal);
+  transition: 0.4s ease-out;
+  transform-origin: center bottom;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: -10px 10px 0 2px var(--color-main-light);
+  }
+  @media (max-width: 768px) {
+    width: 220px;
+    margin: 0 auto;
+  }
+}

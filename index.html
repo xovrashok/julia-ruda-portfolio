@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Front-End Developer Portfolio — Julia Ruda. Specialized in React, TypeScript, and responsive UI development."
+    />
+    <meta
+      name="keywords"
+      content="Front-End Developer, React, TypeScript, JavaScript, Portfolio, Web Developer"
+    />
+
+    <title>Julia | Front-End Developer Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <button class="burger" id="burger-btn" aria-label="Open menu">
+          <span class="burger__span"></span><span class="burger__span"></span
+          ><span class="burger__span"></span>
+        </button>
+
+        <nav class="header__nav" id="header__nav">
+          <button class="close__btn" id="close-btn" aria-label="Close menu">
+            x
+          </button>
+          <ul class="header__menu">
+            <li class="header__item">
+              <a class="header__link" href="#about-me"> About me</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#experience"> Experience</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#certificates">Certificates</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle theme"
+          >
+            🌙
+          </button>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container hero__content">
+        <h1 class="hero__title">Hi, I’m <span>Julia</span></h1>
+        <p class="hero__subtitle">
+          Front-End Developer | React | TypeScript | UI Crafting
+        </p>
+        <div class="hero__buttons">
+          <a href="#portfolio" class="btn btn--primary">View My Work</a>
+          <a
+            href="./files/Yulia_Ruda_Frontend_Developer.pdf.pdf"
+            class="btn btn--secondary"
+            target="_blank"
+            >Download CV</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="about-me" class="about__me">
+      <div class="container">
+        <div class="about__me__section">
+          <div class="about__me__text__section">
+            <h2 class="section-title">About me</h2>
+            <p class="about__me__text">
+              Hi, I’m a Front-End Developer focused on building clean, modern,
+              and intuitive web experiences.
+            </p>
+            <p class="about__me__text">
+              I work with HTML, CSS, JavaScript, React, and TypeScript, creating
+              responsive interfaces that blend performance with design clarity.
+            </p>
+            <p class="about__me__text">
+              My goal is to craft code that not only works seamlessly but also
+              feels effortless to use.
+            </p>
+            <p class="about__me__text">
+              I’m always learning, exploring new front-end tools, and improving
+              both my technical and creative skills.
+            </p>
+          </div>
+          <img class="my__photo" src="./img/me.jpg" alt="my photo" />
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="experience__item" data-animate="fade-up">
+          <div class="experience__header">
+            <h3 class="experience__position">Front-End Developer</h3>
+            <span class="experience__company">Leo-Source</span>
+            <span class="experience__date">2021 — 2023</span>
+          </div>
+
+          <ul class="experience__details">
+            <li>
+              Developed responsive, modern web applications using React and
+              TypeScript.
+            </li>
+            <li>
+              Created reusable UI components and maintained scalable SCSS
+              architecture.
+            </li>
+            <li>
+              Collaborated with designers to build pixel-perfect and accessible
+              interfaces.
+            </li>
+            <li>
+              Optimized performance and improved Lighthouse scores to 90+.
+            </li>
+          </ul>
+
+          <div class="experience__stack">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>SCSS</span>
+            <span>Git</span>
+            <span>REST API</span>
+            <span>Figma</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="slider__wrapper">
+          <button class="arrow__button prev">
+            <svg width="16" height="16">
+              <use href="./img/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+
+          <div class="slider">
+            <div class="slider__slides">
+              <div class="slider__slide">
+                <a
+                  class="slider__link"
+                  href="https://todos-lyart.vercel.app/"
+                  target="_blank"
+                >
+                  <iframe
+                    class="slider__iframe"
+                    src="https://todos-lyart.vercel.app/"
+                    height="350"
+                  ></iframe>
+                  <p class="portfolio__card__title">
+                    <span class="slider__span">&lt; </span> ToDo
+                    <span class="slider__span"> /&gt;</span>
+                  </p>
+                </a>
+              </div>
+              <div class="slider__slide">
+                <a
+                  class="slider__link"
+                  href="https://xovrashok.github.io/16-Flappy-Penguin/"
+                  target="_blank"
+                >
+                  <iframe
+                    class="slider__iframe"
+                    src="https://xovrashok.github.io/16-Flappy-Penguin/"
+                    height="350"
+                  ></iframe>
+                  <p class="portfolio__card__title">
+                    <span class="slider__span">&lt;</span> Flappy Penguin
+                    <span class="slider__span">/&gt;</span>
+                  </p>
+                </a>
+              </div>
+              <div class="slider__slide">
+                <a
+                  class="slider__link"
+                  href="https://yourprojectlink.com"
+                  target="_blank"
+                >
+                  <iframe
+                    class="slider__iframe"
+                    src="https://yourprojectlink.com"
+                    height="350"
+                  ></iframe>
+                  <p class="portfolio__card__title">
+                    <span class="slider__span">&lt;</span> Another Project
+                    <span class="slider__span">/&gt;</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button class="arrow__button next">
+            <svg width="16" height="16">
+              <use href="./img/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="slider__dots"></div>
+      </div>
+    </section>
+    <section id="certificates" class="certificates">
+      <div class="container">
+        <h2 class="section-title">Certificates</h2>
+        <div class="certificates__container">
+          <ul class="certificates__list">
+            <li>
+              <img
+                class="certificates__img"
+                src="./img/frooCodeCampHTML.jpg"
+                alt="freeCodeCamp certificat"
+              />
+            </li>
+            <li>
+              <img
+                class="certificates__img"
+                src="./img/JS.png"
+                alt="JS certificat"
+              />
+            </li>
+            <li>
+              <img
+                class="certificates__img"
+                src="./img/tilda.jpg"
+                alt="tilda certificat"
+              />
+            </li>
+            <li>
+              <img
+                class="certificates__img"
+                src="./img/web.jpg"
+                alt="web certificat"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="contacts" class="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Let’s Connect</h2>
+        <p class="contacts__text">
+          I’m open to collaboration, freelance projects, or just a friendly chat
+          about web development.
+        </p>
+        <ul class="contacts__list">
+          <li>
+            <a href="mailto:juliaruda033@gmail.com" class="contacts__link">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M2 4h20v16H2z" fill="none" />
+                <path d="M22 4H2v16h20V4zm-2 2v.01L12 13 4 6.01V6h16z" />
+              </svg>
+              Email
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/xovrashok"
+              target="_blank"
+              class="contacts__link"
+            >
+              <svg class="icon" viewBox="0 0 24 24">
+                <path
+                  d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1 3 .8.1-.6.3-1 .6-1.3-2.6-.3-5.4-1.3-5.4-6 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.7.9 1.2 2 1.2 3.3 0 4.7-2.8 5.7-5.4 6 .4.3.7.9.7 1.9v2.8c0 .3.2.7.8.6A10.9 10.9 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"
+                />
+              </svg>
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/yulia-ruda-66b637218/"
+              target="_blank"
+              class="contacts__link"
+            >
+              <svg class="icon" viewBox="0 0 24 24">
+                <path
+                  d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1 4.98 2.1 4.98 3.5zM.5 8h4V24h-4V8zm7 0h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4 0 4.8 2.7 4.8 6.2V24h-4v-7.7c0-1.8 0-4-2.4-4-2.4 0-2.8 1.9-2.8 3.9V24h-4V8z"
+                />
+              </svg>
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 Julia — Front-End Developer</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button id="scrollTopBtn" class="scrollTopBtn" title="Back to top">
+      ↑
+    </button>
+
+    <script src="/.js/modal.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/burger.js" defer></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/theme.js"></script>
+  </body>
+</html>

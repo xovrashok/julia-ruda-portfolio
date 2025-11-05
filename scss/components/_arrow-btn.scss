@@ -1,0 +1,35 @@
+.arrow__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid var(--color-main-normal);
+  fill: var(--color-main-normal);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 5;
+
+  &:hover {
+    background-color: var(--color-main-normal);
+    fill: var(--color-primary-light);
+  }
+
+  &.prev {
+    left: 20px;
+  }
+
+  &.next {
+    right: 20px;
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

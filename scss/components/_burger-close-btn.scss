@@ -1,0 +1,23 @@
+.close__btn {
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    & {
+      display: flex;
+      position: absolute;
+      top: 20px;
+      right: 26px;
+      background: none;
+      border: none;
+      color: var(--color-primary-light);
+      font-size: 28px;
+      cursor: pointer;
+      transition: 0.3s ease-out;
+    }
+
+    &:hover {
+      color: var(--color-primary-light);
+      transform: rotate(90deg);
+    }
+  }
+}

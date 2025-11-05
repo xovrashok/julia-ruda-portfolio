@@ -1,0 +1,355 @@
+root {
+  --color-primary-dark #31261a;
+  --color-primary-light #faf4ea;
+  --color-secondary-dark #a28268;
+  --color-main-dark #2e1313;
+  --color-main-normal #8d4848;
+  --color-main-light #da8b8b;
+}
+
+,
+before,
+after {
+  box-sizing border-box;
+}
+
+html {
+  scroll-behavior smooth;
+}
+
+body {
+  margin 0;
+  color var(--color-primary-dark);
+  background-color var(--color-primary-light);
+  font-family Poppins, sans-serif;
+  font-size 16px;
+  font-weight 300;
+  line-height 1.5;
+}
+
+.container {
+  width 100%;
+  max-width 1370px;
+  margin 0 auto;
+}
+
+h2 {
+  font-size 30px;
+  text-align center;
+  text-transform uppercase;
+}
+
+ HEADER
+.header {
+  position absolute;
+  top 0;
+  left 0;
+  width 100%;
+  padding 0 20px;
+}
+
+.header__menu {
+  display flex;
+  align-items center;
+  justify-content flex-end;
+  flex-grow 1;
+  gap 40px;
+  padding 20px 25px;
+}
+
+.header-item {
+  list-style none;
+}
+
+.header-link {
+  position relative;
+  text-decoration none;
+  color var(--color-primary-light);
+  transition color 0.3s ease;
+}
+
+.header-linkafter {
+  content ;
+  position absolute;
+  bottom -3px;
+  left 0;
+  width 0%;
+  height 2px;
+  background-color var(--color-main-light);
+  transition width 0.3s ease;
+}
+
+.header-linkhover {
+  color var(--color-main-light);
+}
+
+.header-linkhoverafter {
+  width 100%;
+}
+
+ WELCOME SECTION
+.welcome-section {
+  display flex;
+  flex-direction column;
+  justify-content center;
+  align-items center;
+  text-align center;
+  width 100%;
+  height 100vh;
+  background-color var(--color-main-dark);
+  background-image linear-gradient(
+    62deg,
+    var(--color-main-normal) 0%,
+    var(--color-main-dark) 100%
+  );
+  color var(--color-primary-light);
+}
+
+.welcome-title {
+  margin 10px 0;
+  font-size 40px;
+}
+
+.welcome-text {
+  margin 0;
+  font-size 24px;
+  font-style italic;
+}
+
+ ABOUT ME 
+.about-me-container {
+  display flex;
+  justify-content center;
+}
+
+.about-me-section {
+  display flex;
+  align-items center;
+  justify-content center;
+  gap 40px;
+  padding 40px;
+  max-width 900px;
+}
+
+.about-me-title {
+  font-size 30px;
+  text-align center;
+  text-transform uppercase;
+}
+
+.my-photo {
+  border-radius 400px 400px 0px 0px;
+  width 350px;
+  box-shadow -8px 8px 0 0 var(--color-primary-light),
+    -8px 8px 0 2px var(--color-main-normal);
+}
+
+.text-section p {
+  text-indent 3mm;
+}
+
+PORTFOLIO
+
+.portfolio-container {
+  display flex;
+  justify-content center;
+  align-items center;
+  padding 0 20px;
+}
+
+.portfolio-list {
+  height 100%;
+  z-index 1;
+  display flex;
+  justify-content center;
+  gap 20px;
+  box-sizing content-box;
+  padding 0 20px;
+}
+
+.portfolio-item {
+  height 100%;
+  position relative;
+  display block;
+}
+
+.portfolio-item a {
+  text-decoration none;
+}
+
+.portfolio-card-title {
+  text-align center;
+  text-decoration none;
+  color var(--color-primary-dark);
+  margin 0;
+}
+
+.code {
+  color var(--color-primary-light);
+  transition color 0.2s ease-out;
+}
+
+.portfolio-itemhover .code {
+  color var(--color-main-normal);
+  font-weight 500;
+}
+
+.arrow-button {
+  border 1px solid var(--color-main-normal);
+  fill var(--color-main-normal);
+  border-radius 50%;
+  width 44px;
+  height 44px;
+  display flex;
+  justify-content center;
+  align-items center;
+  transition 0.3s ease-out;
+  background-color transparent;
+  cursor pointer;
+}
+
+.arrow-buttonhover {
+  background-color var(--color-main-normal);
+  fill var(--color-primary-light);
+}
+
+.arrow-buttonlast-child {
+  transform rotate(180deg);
+}
+
+iframe {
+  border 1px solid var(--color-main-normal);
+  border-radius 16px;
+  transition 0.3s ease-out;
+}
+
+iframehover {
+  transform scale(1.05);
+}
+
+CERTIFICATS
+
+.certificates-list {
+  display grid;
+  grid-template-columns repeat(3, 1fr);
+  gap 40px;
+  list-style none;
+  padding 0;
+  margin 0 auto;
+  padding 0 30px;
+}
+
+.certificat-img {
+  width 100%;
+  height auto;
+  border-radius 12px;
+  box-shadow 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition transform 0.25s ease, box-shadow 0.25s ease;
+  cursor pointer;
+}
+
+.certificat-imghover {
+  transform translateY(-6px) scale(1.03);
+  box-shadow 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+ CONTACTS 
+.contacts {
+  background linear-gradient(
+    120deg,
+    var(--color-main-dark),
+    var(--color-main-normal)
+  );
+  color var(--color-primary-light);
+  text-align center;
+  padding 100px 20px;
+  border-top 3px solid var(--color-main-light);
+}
+
+.contacts h2 {
+  font-size 32px;
+  margin-bottom 20px;
+  letter-spacing 1px;
+}
+
+.contacts-text {
+  max-width 600px;
+  margin 0 auto 50px auto;
+  font-size 18px;
+  line-height 1.6;
+  opacity 0.9;
+}
+
+.contacts-list {
+  list-style none;
+  padding 0;
+  margin 0;
+  display flex;
+  flex-wrap wrap;
+  justify-content center;
+  gap 25px;
+}
+
+.contact-link {
+  display flex;
+  align-items center;
+  gap 10px;
+  color var(--color-primary-light);
+  text-decoration none;
+  font-weight 400;
+  font-size 18px;
+  padding 10px 20px;
+  border 1px solid transparent;
+  border-radius 30px;
+  transition all 0.3s ease;
+}
+
+.contact-linkhover {
+  background-color var(--color-primary-light);
+  color var(--color-main-dark);
+  transform translateY(-3px);
+}
+
+.icon {
+  width 22px;
+  height 22px;
+  fill currentColor;
+}
+
+ FOOTER 
+.footer {
+  background-color var(--color-main-dark);
+  color var(--color-primary-light);
+  text-align end;
+  padding 25px;
+  font-size 14px;
+  opacity 0.9;
+}
+
+ SCROLL TO TOP BUTTON 
+#scrollTopBtn {
+  position fixed;
+  bottom 30px;
+  right 30px;
+  background-color var(--color-main-normal);
+  color var(--color-primary-light);
+  border none;
+  border-radius 50%;
+  width 44px;
+  height 44px;
+  font-size 22px;
+  cursor pointer;
+  opacity 0;
+  pointer-events none;
+  transition opacity 0.3s ease, transform 0.2s ease;
+}
+
+#scrollTopBtnhover {
+  background-color var(--color-main-dark);
+  transform translateY(-4px);
+}
+
+#scrollTopBtn.visible {
+  opacity 1;
+  pointer-events auto;
+}

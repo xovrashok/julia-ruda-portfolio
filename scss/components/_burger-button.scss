@@ -1,0 +1,40 @@
+.burger {
+  position: absolute;
+  right: 24px;
+  top: 18px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &__span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--color-primary-light);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+    & {
+      display: flex;
+    }
+
+    &.active span:nth-child(1) {
+      transform: rotateY(-7.5px) rotate(45deg);
+    }
+
+    &.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    &.active span:nth-child(3) {
+      transform: rotateY(-7.5px) rotate(45deg);
+    }
+  }
+}
