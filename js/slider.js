@@ -81,15 +81,64 @@ slidesContainer.addEventListener("transitionend", () => {
 });
 
 let startX = 0;
-slidesContainer.addEventListener(
-  "touchstart",
-  (e) => (startX = e.touches[0].clientX)
-);
-slidesContainer.addEventListener("touchend", (e) => {
-  const endX = e.changedTouches[0].clientX;
-  if (startX - endX > 50) nextSlide();
-  if (endX - startX > 50) prevSlide();
-});
+let currentTranslate = 0;
+let prevTranslate = 0;
+let animationID = 0;
+let dragging = false;
+let velocity = 0;
+let lastTouchX = 0;
+let lastMoveTime = 0;
+
+slidesContainer.addEventListener("touchstart", touchStart);
+slidesContainer.addEventListener("touchmove", touchMove);
+slidesContainer.addEventListener("touchend", touchEnd);
+
+function touchStart(e) {
+  startX = e.touches[0].clientX;
+  lastTouchX = startX;
+  lastMoveTime = Date.now();
+  dragging = true;
+  velocity = 0;
+  stopAutoSlide();
+  cancelAnimationFrame(animationID);
+}
+
+function touchMove(e) {
+  if (Math.abs(diff) > window.innerWidth / 2) return;
+  if (!dragging) return;
+  const currentX = e.touches[0].clientX;
+  const diff = currentX - startX;
+
+  const now = Date.now();
+  const deltaTime = now - lastMoveTime;
+  const deltaX = currentX - lastTouchX;
+
+  velocity = deltaX / deltaTime;
+  lastTouchX = currentX;
+  lastMoveTime = now;
+
+  currentTranslate =
+    -currentIndex * slideWidth + (diff / window.innerWidth) * 100;
+  slidesContainer.style.transition = "none";
+  slidesContainer.style.transform = `translateX(${currentTranslate}%)`;
+}
+
+function touchEnd() {
+  dragging = false;
+  slidesContainer.style.transition = "transform 0.5s ease-in-out";
+
+  const movedBy = currentTranslate + currentIndex * slideWidth;
+
+  if (movedBy < -10 || velocity < -0.5) {
+    nextSlide();
+  } else if (movedBy > 10 || velocity > 0.5) {
+    prevSlide();
+  } else {
+    showSlide(currentIndex);
+  }
+
+  startAutoSlide();
+}
 
 function startAutoSlide() {
   stopAutoSlide();
