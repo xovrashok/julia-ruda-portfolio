@@ -25,8 +25,6 @@ This project showcases my work, skills, and experience as a **Front-End Develope
 
 ## 🖥️ Live Demo
 👉 **[View Portfolio](https://xovrashok.github.io/julia-ruda-portfolio/)**  
-*(Will be available after you enable GitHub Pages in repo settings → Pages → select `main` branch and `/root`)*
-
 ---
 
 ## 👩‍💻 About Me
