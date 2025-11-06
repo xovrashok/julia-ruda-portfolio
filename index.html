@@ -21,6 +21,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -155,59 +159,116 @@
             </svg>
           </button>
 
-          <div class="slider">
-            <div class="slider__slides">
-              <div class="slider__slide">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
                 <a
-                  class="slider__link"
+                  class="swiper__link"
                   href="https://todos-lyart.vercel.app/"
                   target="_blank"
                 >
                   <iframe
-                    class="slider__iframe"
+                    class="swiper__iframe"
                     src="https://todos-lyart.vercel.app/"
                     height="350"
                   ></iframe>
                   <p class="portfolio__card__title">
-                    <span class="slider__span">&lt; </span> ToDo
-                    <span class="slider__span"> /&gt;</span>
+                    <span class="swiper__span">&lt; </span> ToDo
+                    <span class="swiper__span"> /&gt;</span>
                   </p>
                 </a>
               </div>
-              <div class="slider__slide">
+              <div class="swiper-slide">
                 <a
-                  class="slider__link"
+                  class="swiper__link"
                   href="https://xovrashok.github.io/julia-ruda-portfolio/"
                   target="_blank"
                 >
                   <iframe
-                    class="slider__iframe"
+                    class="swiper__iframe"
                     src="https://xovrashok.github.io/julia-ruda-portfolio/"
                     height="350"
                   ></iframe>
                   <p class="portfolio__card__title">
-                    <span class="slider__span">&lt; </span> Portfolio
-                    <span class="slider__span"> /&gt;</span>
+                    <span class="swiper__span">&lt; </span> Portfolio
+                    <span class="swiper__span"> /&gt;</span>
                   </p>
                 </a>
               </div>
-              <div class="slider__slide">
+              <div class="swiper-slide">
                 <a
-                  class="slider__link"
+                  class="swiper__link"
                   href="https://xovrashok.github.io/16-Flappy-Penguin/"
                   target="_blank"
                 >
                   <iframe
-                    class="slider__iframe"
+                    class="swiper__iframe"
                     src="https://xovrashok.github.io/16-Flappy-Penguin/"
                     height="350"
                   ></iframe>
                   <p class="portfolio__card__title">
-                    <span class="slider__span">&lt;</span> Flappy Penguin
-                    <span class="slider__span">/&gt;</span>
+                    <span class="swiper__span">&lt;</span> Flappy Penguin
+                    <span class="swiper__span">/&gt;</span>
                   </p>
                 </a>
               </div>
+              <div class="swiper-slide">
+                <a
+                  class="swiper__link"
+                  href="https://todos-lyart.vercel.app/"
+                  target="_blank"
+                >
+                  <iframe
+                    class="swiper__iframe"
+                    src="https://todos-lyart.vercel.app/"
+                    height="350"
+                  ></iframe>
+                  <p class="portfolio__card__title">
+                    <span class="swiper__span">&lt; </span> ToDo
+                    <span class="swiper__span"> /&gt;</span>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="swiper__link"
+                  href="https://xovrashok.github.io/julia-ruda-portfolio/"
+                  target="_blank"
+                >
+                  <iframe
+                    class="swiper__iframe"
+                    src="https://xovrashok.github.io/julia-ruda-portfolio/"
+                    height="350"
+                  ></iframe>
+                  <p class="portfolio__card__title">
+                    <span class="swiper__span">&lt; </span> Portfolio
+                    <span class="swiper__span"> /&gt;</span>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="swiper__link"
+                  href="https://xovrashok.github.io/16-Flappy-Penguin/"
+                  target="_blank"
+                >
+                  <iframe
+                    class="swiper__iframe"
+                    src="https://xovrashok.github.io/16-Flappy-Penguin/"
+                    height="350"
+                  ></iframe>
+                  <p class="portfolio__card__title">
+                    <span class="swiper__span">&lt;</span> Flappy Penguin
+                    <span class="swiper__span">/&gt;</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="pagination">
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
             </div>
           </div>
 
@@ -217,8 +278,6 @@
             </svg>
           </button>
         </div>
-
-        <div class="slider__dots"></div>
       </div>
     </section>
     <section id="certificates" class="certificates">
@@ -318,6 +377,7 @@
       ↑
     </button>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="/.js/modal.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/burger.js" defer></script>
