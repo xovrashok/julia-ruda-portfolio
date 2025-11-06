@@ -219,6 +219,9 @@ p {
   .slider__iframe {
     height: 260px;
   }
+  .slider__slide {
+    padding: 0 20px;
+  }
 }
 
 .dot {
