@@ -161,11 +161,6 @@ p {
   right: 20px;
   transform: translateY(-50%) rotate(180deg);
 }
-@media (max-width: 768px) {
-  .arrow__button {
-    display: none;
-  }
-}
 
 .slider {
   overflow: hidden;
@@ -218,6 +213,9 @@ p {
   gap: 10px;
 }
 @media (max-width: 768px) {
+  .slider {
+    width: 75%;
+  }
   .slider__iframe {
     height: 260px;
   }
