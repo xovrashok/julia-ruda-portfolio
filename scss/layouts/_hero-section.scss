@@ -4,12 +4,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(
-    120deg,
-    var(--color-main-dark),
-    var(--color-main-normal)
-  );
-  color: var(--color-primary-light);
   padding: 0 20px;
 
   &__title {

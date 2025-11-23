@@ -6,13 +6,3 @@
   --color-main-normal: #8d4848;
   --color-main-light: #da8b8b;
 }
-
-[data-theme="dark"] {
-  --color-primary-dark: #3b3b3b;
-  --color-primary-light: #d3d3d3;
-  --color-main-dark: #111;
-  --color-main-normal: #333;
-  --color-main-light: #999999;
-  background-color: var(--color-primary-light);
-  color: var(--color-primary-dark);
-}

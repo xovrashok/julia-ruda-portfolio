@@ -1,5 +1,4 @@
 .about__me {
-  background: linear-gradient(135deg, var(--color-main-light), #fff);
   padding: 100px 20px;
 
   &__text__section {
@@ -18,7 +17,6 @@
   &__text {
     font-size: 18px;
     line-height: 1.7;
-    color: var(--color-primary-dark);
     opacity: 0.9;
     margin-bottom: 16px;
   }

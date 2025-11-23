@@ -10,8 +10,12 @@ html {
 
 body {
   margin: 0;
-  color: var(--color-primary-dark);
-  background-color: var(--color-primary-light);
+  color: var(--color-primary-light);
+  background: linear-gradient(
+    120deg,
+    var(--color-main-dark),
+    var(--color-main-normal)
+  );
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 300;

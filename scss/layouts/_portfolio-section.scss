@@ -1,12 +1,63 @@
 .portfolio {
-  background-color: var(--color-main-light);
   padding: 100px 20px;
   text-align: center;
 
-  &__card__title {
-    padding: 15px;
-    font-size: 18px;
-    color: var(--color-primary-dark);
-    font-weight: 500;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  &__wrapper {
+    position: relative;
+    border-radius: 10px;
+    padding: 32px 20px 20px;
+    background-color: rgba(154, 182, 255, 0.8);
+  }
+
+  &__image-wrapper {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+    color: var(--color-primary-light);
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+
+  &__button:hover {
+    background: var(--color-main-normal);
+  }
+
+  &__arrow {
+    rotate: 270deg;
+    transition: 0.5s;
+    margin-left: 32px;
+  }
+
+  &__button:hover &__arrow {
+    rotate: 315deg;
+  }
+
+  @media (max-width: 992px) {
+    &__container {
+      grid-template-columns: 1fr;
+    }
   }
 }
